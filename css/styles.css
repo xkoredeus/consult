@@ -281,8 +281,13 @@ button:active{
       right: -5%;
       bottom: -5%;
       left: -5%;
-      background-color: #39b56378;
       z-index: 1;
+      background: #438da4;
+      background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+      background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+      background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+      opacity: .7;
     }
     .popup {
       width: 100%;

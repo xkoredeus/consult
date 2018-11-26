@@ -62,3 +62,4 @@ $(".tabs__container div.tab-content__item:first-child").show();
         }
     });
 });
+

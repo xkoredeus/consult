@@ -1,7 +1,7 @@
-$('.rev__cnt').owlCarousel({
+$('.part__slider').owlCarousel({
       nav: true,
-      dots: false,
-      items: 3,
+      dots: true,
+      items: 4,
       loop: false,
       margin: 20,
       navText: ["<img src='img/slider__prev.svg'>", "<img src='img/slider__next.svg'>"],
@@ -17,6 +17,34 @@ $('.rev__cnt').owlCarousel({
         },
         768 : {
             items: 3
+        },
+        1040 : {
+            items: 4
+        }
+      }
+});
+$('.cert__slider').owlCarousel({
+      nav: true,
+      dots: true,
+      items: 4,
+      loop: false,
+      margin: 20,
+      navText: ["<img src='img/slider__prev.svg'>", "<img src='img/slider__next.svg'>"],
+      responsive : {
+        0   : {
+            items: 1
+        },
+        380 : {
+            items: 1
+        },
+        480 : {
+            items: 2
+        },
+        768 : {
+            items: 3
+        },
+        1040 : {
+            items: 4
         }
       }
 });

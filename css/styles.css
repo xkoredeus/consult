@@ -148,7 +148,7 @@ textarea{
 	font-size: 14px;
 	padding: 15px 30px;
 	background: none;
-  border: 1px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
   border-radius: 6px;
 }
 input[type="submit"] {
@@ -405,6 +405,7 @@ button:active{
     .header__info-item {
       position: relative;
       padding-left: 20px;
+      letter-spacing: 0;
     }
       .header__info-item:before {
         content: '';
@@ -446,6 +447,7 @@ button:active{
   }
     .main-nav__link {
       font-weight: 600;
+      padding: 20px 40px; 
       text-transform: uppercase;
       position: relative;
       -webkit-transition: all .7s;
@@ -462,10 +464,10 @@ button:active{
       align-items: center;
     }
     .main-nav__link:hover {
-      color: #000;
-      background-color: #fff;
+      color: #fff;
+      background-color: #67a794;
     }
-      .main-nav__link:after {
+      /*.main-nav__link:after {
         position: absolute;
         content: '';
         width: 7px;
@@ -474,7 +476,7 @@ button:active{
         top: 24px;
         background: url(../img/main-nav__plus.svg) no-repeat 50% 50% / contain;
         z-index: 2;
-      }
+      }*/
       .main-nav__link:before {
         position: absolute;
         content: '';
@@ -490,14 +492,7 @@ button:active{
       .main-nav__link:hover:before {
         opacity: 1;
       }
-      .main-nav__link-wrp:last-child .main-nav__link:after {
-         display: none;
-      }
-    .main-nav__link-wrp span {
-      position: relative;
-      padding: 20px 40px; 
-    }
-      .main-nav__link-wrp span:after {
+     .main-nav__link:after {
         bottom: -19px;
         left: 50%;
         border: solid transparent;
@@ -518,7 +513,7 @@ button:active{
         transition: all .6s cubic-bezier(.23,1,.32,1);
         z-index: 100;
       }
-    .main-nav__link-wrp_sub:hover span:after {
+    .main-nav__link-wrp_sub:hover .main-nav__link:after {
       visibility: visible;
       opacity: 1;
       -webkit-transform: translateY(0);
@@ -889,6 +884,9 @@ button:active{
     margin-right: auto;
     display: block;
   }
+  .feed .section__ttl span {
+    color: #39B54A;
+  }
   .feed__form {
     max-width: 990px;
     margin-left: auto;
@@ -915,6 +913,7 @@ button:active{
       border-radius: 6px;
     }
       .input__wrp input {
+        font-weight: 600;
         width: 100%;
         padding-left: 35px;
       }

@@ -463,7 +463,8 @@ button:active{
       -ms-align-items: center;
       align-items: center;
     }
-    .main-nav__link:hover {
+    .main-nav__link:hover,
+    .main-nav__link-wrp.active .main-nav__link {
       color: #fff;
       background-color: #67a794;
     }
@@ -489,7 +490,8 @@ button:active{
         z-index: 2;
         opacity: 0;
       }
-      .main-nav__link:hover:before {
+      .main-nav__link:hover:before,
+      .main-nav__link-wrp.active .main-nav__link:before {
         opacity: 1;
       }
      .main-nav__link:after {
@@ -571,6 +573,8 @@ button:active{
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background: #438da4;
     background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
     background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
@@ -695,6 +699,7 @@ button:active{
     -webkit-background-size: cover;
     background-size: cover;
     border-radius: 6px;
+    max-width: 330px;
     overflow: hidden;
   }
     .adv__item-wrp:before {
@@ -1497,6 +1502,9 @@ button:active{
     .footer__info-item:not(last-child) {
       margin-bottom: 30px;
     }
+    .footer__info-item-geo {
+      max-width: 220px;
+    }
     .footer__info-item:after {
       content: '';
       position: absolute;
@@ -1605,3 +1613,349 @@ button:active{
           color: #39B54A;
           font-weight: 600;
         }
+.banner {
+  background: url(../img/main-slider__bg.jpg) no-repeat 50% 50% / cover;
+  position: relative;
+}
+  .banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #438da4;
+    background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+    background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+    background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+    opacity: .7;
+  }
+  .banner__container {
+    position: relative;
+    color: #fff;
+  }
+    .banner__cnt {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      -ms-align-items: center;
+      align-items: center;
+      padding: 50px 0;
+      position: relative;
+    }
+      .banner__ttl {
+        max-width: 270px;
+        display: block;
+        font-size: 30px;
+        font-family: 'Gilroy-ExtraBold';
+        text-transform: uppercase;
+        padding: 20px;
+        border: 5px solid #ffffff85;
+      }
+      .banner__descr {
+        max-width: 330px;
+        display: block;
+        text-transform: uppercase;
+      }
+        .banner__link {
+          color: #fff;
+          margin-top: 0;
+        }
+      .banner__img_grading {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        margin-left: -230px;
+        width: 400px;
+      }
+.cases {
+  background: url(../img/grading__cases.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #000;
+}
+  .cases::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .6;
+  }
+  .cases__container {
+    position: relative;
+  }
+  .cases__item {
+    padding-left: 80px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+    .cases__item:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: -4px;
+      background: url(../img/grading__cases-gal.svg) no-repeat 50% 50% / contain;
+    }
+    .cases__item-ttl {
+      font-size: 28px;
+      text-transform: uppercase;
+      font-family: 'Gilroy-ExtraBold';
+      margin-bottom: 15px;
+    }
+    .cases__item-descr {
+      font-weight: 600;
+    }
+.grad-price__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  color: #000;
+}
+  .grad-price__info {
+    max-width: 350px;
+    background: url(../img/grading__info-bg.jpg) no-repeat 0 0 / cover;
+    padding: 30px 20px 50px;
+    color: #fff;
+    margin-right: 25px;
+    border-radius: 6px;
+  }
+    .grad-price__info-ttl-wrp {
+      position: relative;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    .grad-price__info-ttl-wrp::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff52;
+    }
+      .grad-price__info-ttl {
+        font-size: 36px;
+        font-family: 'Gilroy-ExtraBold';
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .grad-price__info-subttl span:nth-child(1){
+        font-size: 24px;
+        margin-right: 35px;
+        opacity: .7;
+      }
+      .grad-price__info-subttl span:nth-child(2){
+        font-size: 36px;
+        font-family: 'Gilroy-ExtraBold';
+      }
+      .grad-price__info-list {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+      }
+        .grad-price__info-list::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #ffffff52;
+        }
+        .grad-price__info-list li {
+          padding-left: 25px;
+          position: relative;
+        }
+          .grad-price__info-list li:not(last-child) {
+            margin-bottom: 10px;
+          }
+          .grad-price__info-list li::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 10px;
+            height: 9px;
+            background: url(../img/grad-price__list-img_white.svg) no-repeat 50% 50% / contain;
+          }
+          .grad-price__info-list span {
+            font-weight: 600;
+          }
+      .grad-price__info-feed-ttl {
+        font-family: 'Gilroy-ExtraBold';
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .grad-price__info-tel {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Gilroy-ExtraBold';
+        margin-bottom: 6px;
+        display: block;
+      }
+    .grad-price__descr {
+      max-width: 760px;
+      margin-bottom: 10px;
+    }
+      .grad-price__descr-ttl {
+        font-size: 20px;
+        font-family: 'Gilroy-ExtraBold';
+        text-transform: uppercase;
+        margin: 35px 0 20px; 
+      }
+      .grad-price__descr-item {
+        margin: 0;
+      }
+      .grad-price__descr-list li {
+        padding-left: 25px;
+        position: relative;
+      }
+        .grad-price__descr-list li:not(last-child) {
+          margin-bottom: 10px;
+        }
+        .grad-price__descr-list li::before {
+          content: '';
+          position: absolute;
+          top: 4px;
+          left: 0;
+          width: 10px;
+          height: 9px;
+          background: url(../img/grad-price__list-img_black.svg) no-repeat 50% 50% / contain;
+        }
+.trbl {
+  background: url(../img/grading-trbl__bg.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #000;
+}
+  .trbl::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .7;
+  }
+  .trbl__container {
+    position: relative;
+  }
+    .trbl__item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      -ms-align-items: center;
+      align-items: center;
+      text-align: center;
+      max-width: 330px;
+    }
+      .trbl__item-img {
+        width: 90px;
+        height: 60px;
+        margin: 0 auto 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+      }
+      .trbl__item-descr b {
+        font-family: 'Gilroy-ExtraBold';
+        font-size: 15px;
+      }
+      .trbl__item-descr {
+        font-weight: 600;
+        font-size: 13px;
+      }
+.gain {
+  background: url(../img/gain__bg.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #fff;
+}
+  .gain::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #438da4;
+    background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+    background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+    background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+    opacity: .86;
+  }
+  .gain__container {
+    position: relative;
+  }
+    .gain__item {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -o-flex-direction: column;
+      flex-direction: column;
+      color: #000;
+      background-color: #fff;
+      border-radius: 6px;
+      max-width: 330px;
+      padding: 120px 25px 30px;
+      position: relative;
+    }
+      .gain__item::before {
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: -20px;
+        top: -50px;
+        background: url(../img/grading__cases-gal.svg) no-repeat 50% 50% / contain;
+      }
+      .gain__item-ttl {
+        font-size: 18px;
+        font-family: 'Gilroy-ExtraBold';
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }

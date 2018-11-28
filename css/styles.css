@@ -1473,7 +1473,7 @@ button:active{
     }
       .footer .footer__nav-item-link {
         color: #b3b2b2;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
         font-size: 13px;  
       }
       .footer__nav-item-link:hover {
@@ -1664,6 +1664,9 @@ button:active{
         .banner__link {
           color: #fff;
           margin-top: 0;
+        }
+        .banner__link:hover {
+          color: #ccc;
         }
       .banner__img_grading {
         position: absolute;
@@ -1866,7 +1869,7 @@ button:active{
     bottom: 0;
     left: 0;
     background-color: #fff;
-    opacity: .7;
+    opacity: .89;
   }
   .trbl__container {
     position: relative;
@@ -1941,7 +1944,7 @@ button:active{
       background-color: #fff;
       border-radius: 6px;
       max-width: 330px;
-      padding: 120px 25px 30px;
+      padding: 100px 25px 30px;
       position: relative;
     }
       .gain__item::before {
@@ -1959,3 +1962,227 @@ button:active{
         text-transform: uppercase;
         margin-bottom: 20px;
       }
+.grad-docs {
+  background: url(../img/grad-docs__bg.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #000;
+}
+  .grad-docs::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .79;
+  }
+  .grad-docs__container {
+    position: relative;
+  }
+    .grad-docs-tabs__list {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+      .grad-docs-tabs__list li {
+        padding: 13px 35px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        max-width: 270px;
+        cursor: pointer;
+      }
+      .grad-docs-tabs__list li.active {
+        color: #fff;
+        border-color: #438da4;
+        background: #438da4;
+        background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+        background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+        background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+      }
+    .grad-docs__inner-ttl {
+      font-family: 'Gilroy-ExtraBold';
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .grad-docs__inner-item {
+      min-height: 380px;
+      max-width: 270px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      -webkit-background-size: 90%;
+      background-size: 90%;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+      .grad-docs__inner-item-print {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 25px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-transform: translateY(270px);
+        -ms-transform: translateY(270px);
+        -o-transform: translateY(270px);
+        transform: translateY(270px);
+        opacity: 0;
+      }
+        .grad-docs__inner-item-print img,
+        .grad-docs__inner-item-print span {
+          position: relative;
+        }
+          .grad-docs__inner-item-print img {
+            max-width: 40px;
+          }
+          .grad-docs__inner-item-print span {
+            color: #fff;
+            margin-left: 30px;
+            max-width: 70px;
+            display: block;
+          }
+          .grad-docs__inner-item-print span::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 1px;
+            background-color: #fff;
+            top: 0;
+            left: -12px;
+          }
+        .grad-docs__inner-item-print:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #438da4;
+          background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+          background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+          background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+          opacity: .8;
+        }
+    .grad-docs__inner-item:hover .grad-docs__inner-item-print {
+      opacity: 1;
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+
+.report {
+  background: #fff url(../img/report__bg_right.jpg) no-repeat 100% 50% / 87%;
+  position: relative;
+  color: #000;
+  padding-bottom: 100px;
+}
+  .report__container {
+    position: relative;
+  }
+    .report .section__ttl {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .report__cnt {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      -ms-align-items: center;
+      align-items: center;
+      position: relative;
+      padding-left: 130px;
+    }
+      .report__img-wrp {
+        position: relative;
+        height: 354px;
+        width: 250px;
+      }
+        .report__img-wrp img {
+          max-width: 100%;
+          border-radius: 6px;
+          position: relative;
+        }
+        .report__img-wrp::before {
+          content: '';
+          position: absolute;
+          top: 40px;
+          left: -420px;
+          width: 637px;
+          height: 352px;
+          background: url(../img/report__bg_left.jpg) no-repeat 50% 50% / cover;
+        }
+      .report__info {
+        max-width: 720px;
+      }
+        .report__list li {
+          list-style: none;
+          padding-left: 25px;
+          position: relative;
+        }
+          .report__list li:not(last-child) {
+            margin-bottom: 10px;
+          }
+          .report__list li::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 10px;
+            height: 9px;
+            background: url(../img/grad-price__list-img_green.svg) no-repeat 50% 50% / contain;
+          }
+          .report__list_num li {
+            padding-left: 0;
+          }
+          .report__list_num li:before {
+            display: none;
+          }
+          .report__list_num span {
+            font-family: 'Gilroy-ExtraBold';
+            color: #39B54A;
+            margin-bottom: 5px;
+          }
+          .report__cnt .report__list li {
+            font-family: 'Gilroy-ExtraBold';
+          }
+        .report__descr {
+          margin: 35px 0;
+          display: block;
+        }
+.tariff__cnt {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .tariff__item {}

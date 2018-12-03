@@ -844,7 +844,7 @@ button:active{
         text-transform: uppercase;
       }
   .principals {
-    background: url(../img/princ__bg.jpg) no-repeat 50% 50% / cover;
+    background: url(../img/princ__bg.jpg) fixed no-repeat 50% 50% / cover;
   }
   .princ__subttl {
     font-weight: 600;
@@ -933,6 +933,9 @@ button:active{
       .princ__item-descr {
         text-align: center;
         color: #fff;
+        display: block;
+        max-height: 133px;
+        overflow: hidden;
         opacity: 0; 
         visibility: hidden;  
         -webkit-transition: all .7s;
@@ -1168,7 +1171,7 @@ button:active{
           content: '';
           position: absolute;
           height: 1px;
-          width: 15%;
+          width: 100%;
           background-color: #000;
           left: 0;
           bottom: -25px;
@@ -1180,7 +1183,7 @@ button:active{
           display: none;
         }
         .about__item-ttl {
-          font-size: 20px;
+          font-size: 18px;
           text-transform: uppercase;
           font-family: 'Gilroy-ExtraBold';
           margin-bottom: 9px;

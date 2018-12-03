@@ -51,14 +51,16 @@ $('.cert__slider').owlCarousel({
 
 //Tabs
 $(document).ready(function () {
-$(".tab-content__item").hide();
-$(".tabs__container div.tab-content__item:first-child").show();
+// $(".tab-content__item").hide();
+$(".tabs__container div.tab-content__item:first-child").addClass('active');
+$(".main-slider .main-slider__bg-item:first-child").addClass('active');
     $('ul.tabs__list > li').click(function () {
         if (!($(this).hasClass('active'))) {
             var thisLi = $(this);
             var numLi = thisLi.index();
             thisLi.addClass('active').siblings().removeClass('active');
-            thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
+            thisLi.parent().next().children('div').removeClass('active').eq(numLi).addClass('active');
+            thisLi.parent().parent().parent().parent().find('.main-slider__bg').children('.main-slider__bg-item').removeClass('active').eq(numLi).addClass('active');
         }
     });
 });

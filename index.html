@@ -132,6 +132,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="main-slider__bg">
+			<div class="main-slider__bg-item" style="background-image: url(img/main-slider__bg.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/cert__bg.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/grading__bg.jpg)"></div>
+		</div>
 	</div>
 	<!-- <section class="advantages">
 		<div class="container adv__container">
@@ -234,21 +239,24 @@
 		<div class="container feed__container">
 			<h3 class="section__ttl">Получить <span>бесплатную</span> консультацию эксперта</h3>
 			<form action="[[~[[*id]]]]" method="post" class="feed__form">
-				<div class="input__wrp input__wrp_name">
-					<input type="text" class="input__name" name="feed__name" placeholder="Имя">
+				<div class="feed__form-top">
+					<div class="input__wrp input__wrp_name">
+						<input type="text" class="input__name" name="feed__name" placeholder="Имя">
+					</div>
+					<div class="input__wrp input__wrp_tel">
+						<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон">
+					</div>
+					<div class="input__wrp input__wrp_mail">
+						<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
+					</div>
+					<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
 				</div>
-				<div class="input__wrp input__wrp_tel">
-					<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон">
-				</div>
-				<div class="input__wrp input__wrp_mail">
-					<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
-				</div>
-				<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
+				<label for="feed__form-checkbox" class="policy__checkbox-wrp">
+					<input type="checkbox" id="feed__form-checkbox" name="feed__form-checkbox" required="">
+					<span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+				</label>
 			</form>
-			<label for="policy__checkbox" class="policy__checkbox-wrp">
-				<input type="checkbox" id="feed__checkbox" name="policy__checkbox" required="">
-				<span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
-			</label>
+			
 		</div>
 	</section>
 	<section class="about">

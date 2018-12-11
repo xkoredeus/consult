@@ -1,0 +1,8 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:overlay">
+<circle opacity="0.1" cx="128" cy="128" r="128" fill="white"/>
+<path opacity="0.1" d="M227 128C227 182.676 182.676 227 128 227C73.3238 227 29 182.676 29 128C29 73.3238 73.3238 29 128 29C182.676 29 227 73.3238 227 128Z" fill="white"/>
+<circle opacity="0.1" cx="128" cy="128" r="69" fill="white"/>
+<circle opacity="0.1" cx="128" cy="128" r="38" fill="white"/>
+</g>
+</svg>

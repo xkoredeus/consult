@@ -241,10 +241,10 @@
 			<form action="[[~[[*id]]]]" method="post" class="feed__form">
 				<div class="feed__form-top">
 					<div class="input__wrp input__wrp_name">
-						<input type="text" class="input__name" name="feed__name" placeholder="Имя">
+						<input type="text" class="input__name" name="feed__name" placeholder="Имя" required="">
 					</div>
 					<div class="input__wrp input__wrp_tel">
-						<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон">
+						<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон" required="">
 					</div>
 					<div class="input__wrp input__wrp_mail">
 						<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
@@ -256,7 +256,6 @@
 					<span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
 				</label>
 			</form>
-			
 		</div>
 	</section>
 	<section class="about">
@@ -425,10 +424,10 @@
 			<form action="[[~[[*id]]]]" method="post" class="grading__form">
 				<div class="grading__form-top">
 					<div class="input__wrp input__wrp_name">
-						<input type="text" class="input__name" name="grading__form-name" placeholder="Ваше имя">
+						<input type="text" class="input__name" name="grading__form-name" placeholder="Ваше имя" required="">
 					</div>
 					<div class="input__wrp input__wrp_tel">
-						<input type="tel" class="input__tel" name="grading__form-tel" placeholder="Ваш телефон">
+						<input type="tel" class="input__tel" name="grading__form-tel" placeholder="Ваш телефон" required="">
 					</div>
 				</div>
 				<input type="submit" class="btn input__submit" name="grading__form-submit" value="Заказать">
@@ -556,6 +555,7 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

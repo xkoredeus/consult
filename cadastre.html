@@ -95,34 +95,37 @@
   </header>
   <div class="banner" style="background-image: url(img/cadastre-banner__bg.jpg)">
     <div class="container banner__container">
-      <div class="banner__cnt">
+      <div class="banner__cnt cad-banner__cnt">
         <div class="banner__ttl-wrp">
           <div class="cad-banner__ttl">
             Снижаем налоги и арендные платежи законно!
           </div>
           <div class="cad-banner__subttl">
-            На земельные участки и другие объекты недвижимости
+            100% положительная практика
           </div>
         </div>
         <div class="banner__form-wrp">
           <div class="banner__form-ttl">
-            Бесплатная оценка
-          </div>
-          <div class="banner__form-subttl">
-            Расчитаем бесплатно вашу экономию на налогах от каждого объекта недвижимости
+            Заказать услугу
           </div>
           <form action="[[~[[*id]]]]" method="post" class="cad-banner__form">
-            <div class="input__wrp input__wrp_num">
-              <input type="text" class="input__name" name="cad-banner__form-num" placeholder="Кадастровый номер">
-            </div>
             <div class="input__wrp input__wrp_name">
-              <input type="text" class="input__num" name="cad-banner__form-name" placeholder="Имя">
+              <input type="text" class="input__name" name="cad-banner__form-name" placeholder="Ваше имя" required="">
             </div>
             <div class="input__wrp input__wrp_tel">
-              <input type="tel" class="input__tel" name="cad-banner__form-tel" placeholder="Ваш телефон">
+              <input type="tel" class="input__tel" name="cad-banner__form-tel" placeholder="Телефон" required="">
             </div>
             <div class="input__wrp input__wrp_mail">
               <input type="email" class="input__mail" name="cad-banner__form-mail" placeholder="e-mail">
+            </div>
+            <div class="input__wrp input__wrp_select">
+              <select name="cad-banner__select" class="form__select">
+                <option value="-1">Цель заказа услуги</option>
+                <option value="1">Снизить налог на недвижимость</option>
+                <option value="2">Снизить арендную плату</option>
+                <option value="3">Снизить выкупную стоимость</option>
+                <option value="4">Другое</option>
+              </select>
             </div>
             <input type="submit" class="btn input__submit" name="cad-banner__form-submit" value="Заказать расчет">
             <label for="cad-banner__form-checkbox" class="policy__checkbox-wrp">
@@ -135,3 +138,367 @@
       </div>
     </div>
   </div>
+  <section class="cad-adv">
+    <div class="container cad-adv__container">
+      <h3 class="section__ttl">Снижение кадастровой стоимости позволит Вам:</h3>
+      <div class="cad-adv__cnt fr">
+        <div class="cad-adv__item shd fi-3">
+          <div class="cad-adv__item-ttl">
+            Снизить налог на недвижимость
+          </div>
+          <a href="#popup_call" data-fancybox class="btn cad-adv__item-btn">
+            Подробнее
+          </a>
+        </div>
+         <div class="cad-adv__item shd fi-3">
+          <div class="cad-adv__item-ttl">
+            Снизить арендную плату за пользование недвижимостью
+          </div>
+          <a href="#popup_call" data-fancybox class="btn cad-adv__item-btn">
+            Подробнее
+          </a>
+        </div>
+         <div class="cad-adv__item shd fi-3">
+          <div class="cad-adv__item-ttl">
+            Снизить выкупную стоимость объекта недвижимости
+          </div>
+          <a href="#popup_call" data-fancybox class="btn cad-adv__item-btn">
+            Подробнее
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feed">
+    <div class="container feed__container">
+      <h3 class="section__ttl">Получить <span>бесплатную</span> консультацию эксперта</h3>
+      <form action="[[~[[*id]]]]" method="post" class="feed__form">
+        <div class="feed__form-top">
+          <div class="input__wrp input__wrp_name">
+            <input type="text" class="input__name" name="feed__name" placeholder="Имя" required="">
+          </div>
+          <div class="input__wrp input__wrp_tel">
+            <input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон" required="">
+          </div>
+          <div class="input__wrp input__wrp_mail">
+            <input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
+          </div>
+          <input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
+        </div>
+        <label for="feed__form-checkbox" class="policy__checkbox-wrp">
+          <input type="checkbox" id="feed__form-checkbox" name="feed__form-checkbox" required="">
+          <span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+        </label>
+      </form>
+    </div>
+  </section>
+  <section class="cad-profit spincrement__wrp">
+    <div class="container cad-profit__container">
+      <div class="cad-profit__top fr">
+        <div class="cad-profit__item fi-3 active" data-item="1">
+          <div class="cad-profit__item-top">
+            <div class="cad-profit__item-img" style="background-image: url(img/cad-profit__item-img_1.svg)"></div>
+            <div class="cad-profit__item-ttl">80%</div>
+          </div>
+          <div class="cad-profit__item-descr">
+            Максимальный результат по снижению кадастровой стоимости
+          </div>
+        </div>
+        <div class="cad-profit__item fi-3" data-item="2">
+          <div class="cad-profit__item-top">
+            <div class="cad-profit__item-img" style="background-image: url(img/cad-profit__item-img_2.svg)"></div>
+            <div class="cad-profit__item-ttl">14 лет</div>
+          </div>
+          <div class="cad-profit__item-descr">
+            Опыт работы экспертов нашей компании на рынке экспертизы и оценки
+          </div>
+        </div>
+        <div class="cad-profit__item fi-3" data-item="3">
+          <div class="cad-profit__item-top">
+            <div class="cad-profit__item-img" style="background-image: url(img/cad-profit__item-img_3.svg)"></div>
+            <div class="cad-profit__item-ttl">Более 50 000</div>
+          </div>
+          <div class="cad-profit__item-descr">
+            Объектов оценили эксперты нашего агенства
+          </div>
+        </div>
+      </div>
+      <div class="cad-profit__promo-wrp">
+        <div class="cad-profit__promo-descr">Наши клиенты уже <span>сэкономили</span></div>
+        <div class="cad-profit__promo-num"><span class="spincrement">411213131</span> руб.</div>
+        <div class="cad-profit__promo-descr">среди них можете быть и вы</div>
+        <a href="#popup_call" data-fancybox class="btn cad-profit__btn">Начать экономить</a>
+      </div>
+    </div>
+    <div class="cad-profit__bgs">
+      <div class="cad-profit__bg-item active" style="background-image: url(img/grading__bg.jpg)" data-item="1"></div>
+      <div class="cad-profit__bg-item" style="background-image: url(img/feed__bg.jpg)" data-item="2"></div>
+      <div class="cad-profit__bg-item" style="background-image: url(img/part__bg.jpg)" data-item="3"></div>
+    </div>
+  </section>
+  <section class="stages">
+    <div class="container stages__container">
+      <h3 class="section__ttl">Порядок работы</h3>
+      <div class="stages__cnt">
+        <div class="stages__item stages__item_left">
+          <div class="stages__info">
+            <div class="stages__ttl">
+              Заявка на оценку
+            </div>
+            <div class="stages__descr">
+              Вам необходимо определить рыночную стоимость объекта недвижимости - Вы звоните или оставляете заявку на сайте.
+            </div>
+          </div>
+          <div class="stages__num">1</div>
+        </div>
+        <div class="stages__item stages__item_right">
+          <div class="stages__info">
+            <div class="stages__ttl">
+              Подготовка документов
+            </div>
+            <div class="stages__descr">
+              Вам сообщается, какие именно документы на объект недвижимости требуются для проведения оценки.
+            </div>
+          </div>
+          <div class="stages__num">2</div>
+        </div>
+        <div class="stages__item stages__item_left">
+          <div class="stages__info">
+            <div class="stages__ttl">
+              Выезд оценщика
+            </div>
+            <div class="stages__descr">
+              Вы согласовываете дату и время прибытия специалиста, который фотографирует объект и осуществляет его оценку.
+            </div>
+          </div>
+          <div class="stages__num">3</div>
+        </div>
+        <div class="stages__item stages__item_right">
+          <div class="stages__info">
+            <div class="stages__ttl">
+              Подготовка отчета
+            </div>
+            <div class="stages__descr">
+              После осмотра Вашего объекта составляется отчет об оценке с указанием рыночной стоимости Вашей недвижимости, который передается в офисе агентство оценки "G.U. Consulting" или доставляется курьером.
+            </div>
+          </div>
+          <div class="stages__num">4</div>
+        </div>
+        <div class="stages__item stages__item_left">
+          <div class="stages__info">
+            <div class="stages__ttl">
+              Изменение стоимости объекта
+            </div>
+            <div class="stages__descr">
+              Получение решения суда, вступившего в законную силу и отражающее изменение стоимости объекта.
+            </div>
+          </div>
+          <div class="stages__num">5</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="cad-docs">
+    <div class="container cad-docs__container">
+      <h3 class="section__ttl">Пакет документов для проведения работ</h3>
+      <div class="cad-docs__cnt">
+        <div class="cad-docs__img-wrp">
+          <img src="img/report__img.jpg" alt="report__img.jpg" class="shd">
+        </div>
+        <div class="cad-docs__info">
+          <ul class="cad-docs__list">
+            <li>1. Свидетельство о праве собственности/Выписка из ЕГРЮЛ</li>
+            <li>2. Правоустанавливающие документы ( ДДУ, Договор дарения, ДКП и т.д)</li>
+            <li>3. Выписка из ЕГРН о кадастровой стоимости объекта недвижимости</li>
+            <li>4. Справка о балансовой стоимости объекта (при наличии)</li>
+            <li>5. Технический паспорт (для объекта капитального строительства)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reasons">
+    <div class="container reasons__container">
+      <h3 class="section__ttl">
+        С какими проблемами можно столкнуться при заказе оценки
+      </h3>
+      <div class="reasons__cnt fr">
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_1.svg)"></div>
+          <div class="reasons__item-descr">
+            Проведение предварительной оценки рыночной стоимости объекта
+          </div>
+        </div>
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_2.svg)"></div>
+          <div class="reasons__item-descr">
+            Предоставление комплексной услуги «под ключ», до положительного результата
+          </div>
+        </div>
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_3.svg)"></div>
+          <div class="reasons__item-descr">
+            Установление справедливой кадастровой стоимости объекта и справедливого налога, который в некоторых случаях может быть ниже текущего более чем на 70%
+          </div>
+        </div>
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_4.svg)"></div>
+          <div class="reasons__item-descr">
+            Большой опыт в оказании услуг по оспариванию кадастровой стоимости объектов
+          </div>
+        </div>
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_5.svg)"></div>
+          <div class="reasons__item-descr">
+            Предоставление услуг в максимально возможные кратчайшие сроки
+          </div>
+        </div>
+        <div class="reasons__item fi-3">
+          <div class="reasons__item-img" style="background-image: url(img/reasons__item-img_6.svg)"></div>
+          <div class="reasons__item-descr">
+            Более 1000 клиентов, довольных результатами нашей рыботы
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cert">
+    <div class="container cert__container">
+      <h3 class="section__ttl">
+        Наши сертификаты
+      </h3>
+      <div class="cert__slider owl-carousel">
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+        <a href="img/cert__item-img_1.jpg" class="cert__slider-item shd" style="background-image: url(img/cert__item-img_1.jpg)" data-fancybox="cert"></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer__container">
+        <div class="footer-top__nav fr">
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">О компании</a>
+            <ul class="footer__nav-item-list">
+              <li><a href="#" class="footer__nav-item-link">История компании</a></li>
+              <li><a href="#" class="footer__nav-item-link">Руководство</a></li>
+              <li><a href="#" class="footer__nav-item-link">Миссия и ценности</a></li>
+              <li><a href="#" class="footer__nav-item-link">Рейтинги</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">Услуги</a>
+            <ul class="footer__nav-item-list">
+              <li><a href="#" class="footer__nav-item-link">Оценка недвижимости</a></li>
+              <li><a href="#" class="footer__nav-item-link">Оспаривание кадастровой стоимости</a></li>
+              <li><a href="#" class="footer__nav-item-link">Автоэкспертиза</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">Партнёры</a>
+          </div>
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">Новости</a>
+          </div>
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">Отзывы</a>
+          </div>
+          <div class="footer__nav-item fi-3">
+            <a href="#" class="footer__nav-item-ttl">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-top__info">
+          <div class="footer__info-item">
+            <div class="footer__info-item-ttl">
+              Наш адрес:
+            </div>
+            <div class="footer__info-item-geo">
+              г. Москва, ул. Новорогожская, д. 30, оф. 1
+            </div>
+          </div>
+          <div class="footer__info-item">
+            <div class="footer__info-item-ttl">
+              Наш телефон:
+            </div>
+            <a href="tel:88005000141" class="footer__info-item-tel">
+               8 (800) 500-01-41
+            </a>
+          </div>
+          <div class="footer__info-item">
+            <div class="footer__info-item-ttl">
+              Мы в соцсетях:
+            </div>
+            <div class="footer__info-item-soc-wrp">
+              <a href="#" class="footer__info-item-soc">
+                <img src="img/soc__item-img_1.svg" alt="soc__item-img_1.svg">
+              </a>
+              <a href="#" class="footer__info-item-soc">
+                <img src="img/soc__item-img_2.svg" alt="soc__item-img_2.svg">
+              </a>
+              <a href="#" class="footer__info-item-soc">
+                <img src="img/soc__item-img_3.svg" alt="soc__item-img_3.svg">
+              </a>
+              <a href="#" class="footer__info-item-soc">
+                <img src="img/soc__item-img_4.svg" alt="soc__item-img_4.svg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <div class="container footer__container">
+        <div class="footer-bot__info">
+          <a href="#"><img src="img/footer__logo.svg" alt="footer__logo.svg" class="footer__main-logo"></a>
+          <div class="footer__copy">
+            © 2016 G.U. Consulting все права защищены
+          </div>
+        </div>
+        <div class="footer-bot__akticom">
+          <a href="http://akticom.ru/" target="_blank" class="footer-bot__akticom-link">
+            Создано руками <span>Akticom</span>
+          </a>
+        </div>
+        <div class="footer-bot__policy">
+          Нажимая на кнопку <span>Получить консультацию</span>, вы даете согласие на <a href="#">обработку персональных данных</a> на условиях и для целей, определенных <a href="#">политикой конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="popup_call" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_call__wrp">
+      <form action="[[~[[*id]]]]" method="post" class="popup">
+        <h3 class="popup__ttl">Оставьте заявку</h3>
+        <div class="input__wrp input__wrp_name">
+          <input type="text" class="form__input" name="popup_call__name" placeholder="Ваше имя" required="">
+        </div>
+        <div class="input__wrp input__wrp_tel">
+          <input type="tel" class="form__input" name="popup_call__tel" placeholder="Телефон" required="">
+        </div>
+        <div class="input__wrp input__wrp_mail">
+          <input type="email" class="form__input" name="popup_call__email" placeholder="E-mail">
+        </div>
+        <input type="submit" class="btn form__input form__input_submit" name="popup_call__sumbit" value="Заказать">
+        <div class="popup__policy">
+          Нажимая кнопку "Отправить", вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/jquery.spincrement.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -394,7 +394,7 @@ button:active{
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
-    padding: 25px 0 16px;
+    padding: 8px 0;
   }
   .main-logo:hover {
     opacity: 0.7;
@@ -3122,12 +3122,12 @@ button:active{
       -ms-align-items: center;
       align-items: center;
       position: relative;
-      padding-left: 130px;
+      padding-left: 60px;
     }
       .cad-docs__img-wrp {
         position: relative;
-        height: 354px;
-        width: 250px;
+        height: 450px;
+        width: 420px;
       }
         .cad-docs__img-wrp img {
           max-width: 100%;
@@ -3140,11 +3140,12 @@ button:active{
           top: 40px;
           left: -420px;
           width: 637px;
-          height: 352px;
-          background-color: #E5E5E5;
+          height: 472px;
+          background-color: #EDE9E4;
         }
       .cad-docs__info {
         max-width: 720px;
+        margin-top: -80px;
       }
         .cad-docs__list li {
           list-style: none;
@@ -3182,6 +3183,7 @@ button:active{
           }
 .reasons {
   color: #000;
+  background-color: #EDE9E4;
 }
   .reasons__item {
     display: -webkit-flex;
@@ -3212,3 +3214,96 @@ button:active{
       font-family: 'Gilroy-ExtraBold';
       font-size: 15px;
     }
+.cad-price {
+  background: url(../img/tariff__bg.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #000;
+}
+  .cad-price:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .79;
+  }
+  .cad-price__container {
+    position: relative;
+  }
+    .cad-price__cnt {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+      .cad-price__item {
+        text-align: center;
+        max-width: 420px;
+        color: #fff;
+        border-radius: 6px;
+        padding: 25px 30px;
+        background: #438da4;
+        background: -moz-linear-gradient(left, #438da4 0%, #39b563 100%);
+        background: -webkit-linear-gradient(left, #438da4 0%,#39b563 100%);
+        background: linear-gradient(to right, #438da4 0%,#39b563 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
+        position: relative;
+      }
+        .cad-price__item::after {
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          right: -10px;
+          background-color: #fff;
+          border-radius: 50%;
+          -webkit-box-shadow: inset 0px 0px 0px 8px rgba(58,176,107,1);
+          -moz-box-shadow: inset 0px 0px 0px 8px rgba(58,176,107,1);
+          box-shadow: inset 0px 0px 0px 8px rgba(58,176,107,1);
+        }
+        .cad-price__item-ttl {
+          font-size: 22px;
+          font-family: 'Gilroy-ExtraBold';
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+        .cad-price__item-info {
+          font-size: 42px;
+        }
+          .cad-price__item-info span {
+            font-family: 'Gilroy-ExtraBold';
+          }
+      .cad-price__item:nth-child(1) {
+        margin-bottom: 27px;
+      }
+        .cad-price__item:nth-child(1):after {
+          bottom: -5px;
+        }
+        .cad-price__item:nth-child(2):after {
+          top: -5px;
+        }
+      .cad-price__sticker {
+        max-width: 341px;
+        position: absolute;
+        top: 35%;
+        left: 420px;
+      }
+      .cad-price__sticker img {
+        max-width: 100%;
+      }
+        .cad-price__sticker-descr {
+          font-family: 'Gilroy-ExtraBold';
+          font-size: 16px;
+          text-align: center;
+          max-width: 240px;
+          margin: 10px auto 0;
+        }
+          .cad-price__sticker-descr span {
+            font-size: 30px;
+            display: block;
+            color: #3ab06b;
+           }

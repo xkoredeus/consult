@@ -558,7 +558,7 @@ button:active{
     transition: all .6s cubic-bezier(.23,1,.32,1);
     box-shadow: 0 0 20px rgba(0,0,0,.3);
     border-radius: 6px;
-    z-index: 2;
+    z-index: 3;
   }
   .main-nav__link-wrp_sub:hover .main-nav__submenu {
     visibility: visible;
@@ -1774,7 +1774,7 @@ button:active{
       justify-content: space-between;
       -ms-align-items: center;
       align-items: center;
-      padding: 50px 0;
+      padding: 30px 0 50px;
       position: relative;
     }
       .banner__ttl {
@@ -1800,7 +1800,7 @@ button:active{
         }
       .banner__img_grading {
         position: absolute;
-        top: 30px;
+        top: -20px;
         left: 50%;
         margin-left: -230px;
         width: 400px;
@@ -1820,7 +1820,7 @@ button:active{
     bottom: 0;
     left: 0;
     background-color: #fff;
-    opacity: .6;
+    opacity: .8;
   }
   .cases__container {
     position: relative;
@@ -2726,7 +2726,7 @@ button:active{
       text-transform: uppercase;
     }
     .cad-banner__form .input__wrp {
-      background-color: #fff;
+      background-color: #ffffffa8;
       max-width: 310px;
       margin-bottom: 10px;
     }
@@ -2900,6 +2900,10 @@ button:active{
     -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
+  }
+  .cad-profit__item.active .cad-profit__item-top::after {
+    width: 16px;
+    margin-left: -8px;
   }
   .cad-profit__item:hover .cad-profit__item-top::after {
     width: 16px;
@@ -3307,3 +3311,145 @@ button:active{
             display: block;
             color: #3ab06b;
            }
+.auto-banner__cnt {
+  position: relative;
+  padding: 30px 0 80px;
+}
+  .auto-banner__cnt::after {
+    content: '';
+    position: absolute;
+    width: 860px;
+    height: 600px;
+    background: url(../img/auto-banner__img.svg) no-repeat 50% 50% / contain;
+    right: -50px;
+    top: -90px;
+    z-index: 2;
+  }
+.auto-banner__cnt .banner__form-wrp {
+  max-width: 310px;
+}
+.auto-banner__cnt .input__wrp {
+  background-color: #ffffffa8;
+}
+.auto-serv {
+  background: url(../img/auto-serv__bg.jpg) fixed no-repeat 50% 50% / cover;
+  position: relative;
+  color: #000;
+}
+  .auto-serv::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .8;
+  }
+  .auto-serv__container {
+    position: relative;
+  }
+  .auto-serv__item {
+    padding-left: 80px;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+    .auto-serv__item:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0;
+      top: -4px;
+      background: url(../img/grading__cases-gal.svg) no-repeat 50% 50% / contain;
+    }
+    .auto-serv__item-ttl {
+      font-size: 28px;
+      text-transform: uppercase;
+      font-family: 'Gilroy-ExtraBold';
+      margin-bottom: 15px;
+    }
+    .auto-serv__item-descr {
+      font-weight: 600;
+    }
+.auto-stages {
+  background-color: #fff;
+}
+.auto-gain {
+  background: none;
+}
+  .auto-gain::before {
+    opacity: 1;
+  }
+.crumbs {
+  margin: 0;
+  padding: 25px 0 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-align-items: center;
+  align-items: center;
+}
+  .crumbs li {
+    border: 1px solid #fff;
+    border-left: transparent;
+    position: relative;
+    opacity: .63;
+  }
+  .crumbs a,
+  .crumbs span {
+    padding: 10px 20px 10px 39px;
+    display: block;
+  }
+  .crumbs a {
+    color: #fff;
+  }
+    .crumbs li:nth-child(1) a,
+    .crumbs li:nth-child(1) span {
+      padding-left: 15px;
+    }
+    .crumbs li:nth-child(1) {
+      border-right: transparent;
+      border-left: 1px solid #fff;
+    }
+    .crumbs li:not(last-child) {
+      border-right: transparent;
+    }
+      .crumbs li:not(firs-child)::after {
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        right: -15px;
+        top: 5px;
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      .crumbs li.active {
+        opacity: 1;
+      }
+      .crumbs li:hover {
+        opacity: 1;
+      }

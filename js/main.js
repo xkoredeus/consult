@@ -93,3 +93,13 @@ $(document).ready(function () {
     });
  
 });
+
+$('.auto-calc__slider').owlCarousel({
+    nav: true,
+    dots: false,
+    items: 1,
+    loop: false,
+    margin: 20,
+    mouseDrag: false,
+    navText: ["<img src='img/slider__prev.svg'>", "<img src='img/slider__next.svg'>"],
+});

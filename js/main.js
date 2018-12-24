@@ -13,7 +13,7 @@ $('.part__slider').owlCarousel({
             items: 1
         },
         480 : {
-            items: 2
+            items: 1
         },
         768 : {
             items: 3
@@ -38,7 +38,7 @@ $('.cert__slider').owlCarousel({
             items: 1
         },
         480 : {
-            items: 2
+            items: 1
         },
         768 : {
             items: 3
@@ -102,4 +102,24 @@ $('.auto-calc__slider').owlCarousel({
     margin: 20,
     mouseDrag: false,
     navText: ["<img src='img/slider__prev.svg'>", "<img src='img/slider__next.svg'>"],
+});
+
+//Мобильное меню
+$('.header__hamburger').on('click', function() {
+  $(this).toggleClass('active','slow');
+  $('.header__bot-wrp').toggleClass('active');
+  $('body').toggleClass('fixed');
+});
+if (screen.width <= 768) {
+  window.onload = function(){
+      $('.main-nav__link-wrp_sub .main-nav__link').on('click', function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('active','slow');
+      });
+  };
+};
+  
+//Закрываем AjaxForm popup после успешной отправки
+$(document).on('af_complete', function(event,res) {
+  if(res.success) parent.$.fancybox.close();
 });

@@ -3849,6 +3849,8 @@ button:active{
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 6px;
+    overflow: hidden;
   }
     .rev__item-btn {
       width: 63px;
@@ -3860,7 +3862,7 @@ button:active{
     .rev__item::before {
       content: '';
       position: absolute;
-      width: 100%;
+      width: 120%;
       height: 100%;
       top: 0;
       left: 0;
@@ -3870,6 +3872,7 @@ button:active{
       background: linear-gradient(to right, #438da4 0%,#39b563 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#438da4', endColorstr='#39b563',GradientType=1 );
       opacity: 0;
+      border-radius: 6px;
     }
     .rev__item:hover::before {
       opacity: .66;
@@ -3880,3 +3883,86 @@ button:active{
       -o-transform: scale(1.2);
       transform: scale(1.2);
     }
+/*.partners__in .tab-content__item {
+  display: none;
+  position: relative;
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.partners__in .tab-content__item.active {
+  position: absolute;
+  display: block;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1;
+}*/
+.partners__in {
+  background: url(../img/partners__in-bg.jpg) fixed no-repeat 50% 50% / cover;
+}
+.partners__in .grad-docs-tabs__list li {
+  max-width: 220px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+  .partners__item {
+    max-width: 320px;
+    height: 125px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 190px;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+.reviews__in {
+  background: url(../img/reviews__in-bg.jpg) fixed no-repeat 50% 50% / cover;
+}
+  .reviews__in .grad-docs-tabs__cnt {
+      min-height: 380px;
+  }
+  .reviews__in .grad-docs-tabs__list li {
+    max-width: 530px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+    .reviews__in .owl-carousel .owl-prev,
+    .reviews__in .owl-carousel .owl-next {
+      bottom: 34%;
+    }
+    .reviews__cnt_text.owl-carousel .owl-prev,
+    .reviews__cnt_text.owl-carousel .owl-next {
+      bottom: 43%;
+    }
+    .reviews__in .rev__item {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .reviews__in .grad-docs__inner-item {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .reviews__in .owl-carousel button.owl-dot.active{
+    transform:scale(0.9);
+    border:1px solid #000;
+    background-color:#000;
+  }
+  .reviews__in .owl-carousel button.owl-dot {
+    border-color: #000;
+  }

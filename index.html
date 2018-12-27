@@ -102,7 +102,11 @@
 				<ul class="tabs__list main-slider__list">
 					<li class="main-slider__list-item active">
 						<a href="#" class="main-slider__list-item-link"></a>
-						Оценочные услуги
+						Оценка бизнеса
+					</li>
+					<li class="main-slider__list-item">
+						<a href="#" class="main-slider__list-item-link"></a>
+						Оценка недвижимости
 					</li>
 					<li class="main-slider__list-item">
 						<a href="#" class="main-slider__list-item-link"></a>
@@ -116,7 +120,16 @@
 				<div class="tabs__container main-slider__cnt">
 					<div class="main-slider__content-item tab-content__item">
 						<div class="main-slider__ttl">
-							Оценочные услуги
+							Оценка бизнеса
+						</div>
+						<div class="main-slider__descr">
+							Процесс определения рыночной стоимости объекта или отдельных прав в отношении оцениваемого объекта недвижимости. Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т. д. в отношении различных объектов недвижимости.
+						</div>
+						<a href="#" class="btn main-slider__btn">Перейти в услугу</a>
+					</div>
+					<div class="main-slider__content-item tab-content__item">
+						<div class="main-slider__ttl">
+							Оценка недвижимости
 						</div>
 						<div class="main-slider__descr">
 							Процесс определения рыночной стоимости объекта или отдельных прав в отношении оцениваемого объекта недвижимости. Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т. д. в отношении различных объектов недвижимости.
@@ -145,9 +158,11 @@
 			</div>
 		</div>
 		<div class="main-slider__bg">
-			<div class="main-slider__bg-item" style="background-image: url(img/main-slider__bg.jpg)"></div>
-			<div class="main-slider__bg-item" style="background-image: url(img/cert__bg.jpg)"></div>
-			<div class="main-slider__bg-item" style="background-image: url(img/grading__bg.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/main-slider__bg_1.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/main-slider__bg_2.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/main-slider__bg_3.jpg)"></div>
+			<div class="main-slider__bg-item" style="background-image: url(img/auto-banner__bg.jpg)"></div>
+			
 		</div>
 	</div>
 	<!-- <section class="advantages">
@@ -249,25 +264,46 @@
 	</section>
 	<section class="feed">
 		<div class="container feed__container">
-			<h3 class="section__ttl">Получить <span>бесплатную</span> консультацию эксперта</h3>
-			<form action="[[~[[*id]]]]" method="post" class="feed__form">
-				<div class="feed__form-top">
-					<div class="input__wrp input__wrp_name">
-						<input type="text" class="input__name" name="feed__name" placeholder="Имя" required="">
+			<h3 class="section__ttl">
+				<span>Получить</span>
+				<span>бесплатную</span>
+				<span>консультацию эксперта</span>
+			</h3>
+			<div class="feed__cnt fr">
+				<form action="[[~[[*id]]]]" method="post" class="feed__form fi-2">
+					<div class="feed__form-top">
+						<div class="input__wrp input__wrp_name">
+							<input type="text" class="input__name" name="feed__name" placeholder="Имя" required="">
+						</div>
+						<div class="input__wrp input__wrp_tel">
+							<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон" required="">
+						</div>
+						<div class="input__wrp input__wrp_mail">
+							<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
+						</div>
+						<div class="feed__btn-wrp">
+							<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
+							<div class="feed__name">
+								<div class="feed__name-ttl">
+									Ирина Семенихина
+								</div>
+								<div class="feed__name-descr">
+									Клиентский менеджер
+								</div>
+							</div>
+						</div>
+							
 					</div>
-					<div class="input__wrp input__wrp_tel">
-						<input type="tel" class="input__tel" name="feed__tel" placeholder="Ваш телефон" required="">
-					</div>
-					<div class="input__wrp input__wrp_mail">
-						<input type="tel" class="input__mail" name="feed__mail" placeholder="e-mail">
-					</div>
-					<input type="submit" class="btn input__submit" name="feed__submit" value="Записаться сейчас">
+					<label for="feed__form-checkbox" class="policy__checkbox-wrp">
+						<input type="checkbox" id="feed__form-checkbox" name="feed__form-checkbox" required="">
+						<span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
+					</label>
+				</form>
+				<div class="feed__girl fi-2">
 				</div>
-				<label for="feed__form-checkbox" class="policy__checkbox-wrp">
-					<input type="checkbox" id="feed__form-checkbox" name="feed__form-checkbox" required="">
-					<span class="checkbox__text">Согласен с <a href="#" class="policy__link">политикой конфиденциальности</a></span>
-				</label>
-			</form>
+			</div>
+			
+				
 		</div>
 	</section>
 	<section class="about">
@@ -282,7 +318,7 @@
 					<div class="about__descr">
 						С другой стороны, укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Задача организации, в особенности же укрепление и развитие структуры, в значительной степени обуславливает создание соответствующий условий активизации.
 					</div>
-					<a href="#popup_call" data-fancybox class="btn about__btn">Заказать звонок</a>
+					<!-- <a href="#popup_call" data-fancybox class="btn about__btn">Заказать звонок</a> -->
 				</div>
 			</div>
 			<div class="about__right">

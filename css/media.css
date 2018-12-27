@@ -89,6 +89,16 @@
 	.feed__form-top > * {
 		margin: 5px 10px;
 	}
+	.grad-banner::after {
+		display: none;
+	}
+	.grad-banner .banner__ttl-wrp {
+		order: 1;
+		margin: 10px auto 15px;
+	}
+	.grad-banner .banner__form-wrp {
+		order: 2;
+	}
 	.banner__cnt {
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
@@ -113,6 +123,9 @@
 		.cad-banner__form .input__wrp {
 			max-width: unset;
 		}
+	.main-slider__container::after {
+		display: none;
+	}
 	.main-slider__cnt {
 		display: none;
 	}
@@ -126,8 +139,20 @@
 		.main-slider__list-item-link {
 			display: block;
 		}
-}
-@media only screen and (max-width: 768px) {
+	.header__hamburger {
+	    display: block;
+	}
+	.main-nav a {
+      color: #fff;
+    }
+	.main-nav__link {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.main-nav__submenu {
+		position: relative;
+		display: none;
+	}
 	.main-nav__submenu {
 		-webkit-transform: translateY(0px);
 		-ms-transform: translateY(0px);
@@ -147,9 +172,6 @@
 	.main-nav__submenu-item-ttl {
 		font-size: 14px;
 	}
-	section {
-		padding: 25px 0;
-	}
 	.header__top {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
@@ -163,23 +185,6 @@
 		.header__top .btn {
 	   		margin: 6px auto 15px;
 		}
-		.header__hamburger {
-		    display: block;
-		}
-		.main-nav a {
-	      color: #fff;
-	    }
-    	.main-nav__link {
-    		padding-top: 10px;
-    		padding-bottom: 10px;
-    	}
-    	.main-nav__submenu {
-			position: relative;
-			display: none;
-    	}
-    .grad-docs-tabs__list {
-    	justify-content: center;
-    }
 	.header__bot-wrp {
 		opacity: 0;
 	    visibility: hidden;
@@ -188,6 +193,26 @@
 	    left: 0;
 	    right: 0;
     }
+}
+@media only screen and (max-width: 768px) {
+	
+	section {
+		padding: 25px 0;
+	}
+	.feed__girl {
+		display: none;
+	}
+	.feed__name {
+		display: none;
+	}
+	.feed .input__wrp {
+		max-width: 270px;
+	}
+	
+    .grad-docs-tabs__list {
+    	justify-content: center;
+    }
+	
 	.auto-banner__cnt::after {
 		display: none;
 	}
@@ -357,6 +382,24 @@
 		.report__info {
 			margin-top: 40px;
 		}
+	.partners__in .tab-content__item {
+		position: relative;
+    	top: 0;
+		-webkit-transform: translateY(0%);
+		-ms-transform: translateY(0%);
+		-o-transform: translateY(0%);
+		transform: translateY(0%);
+		display: none;
+	}
+		.partners__in .tab-content__item.active {
+			display: block;
+		}
+	.reviews__in .owl-carousel .owl-prev {
+		left: 0;
+	}
+	.reviews__in .owl-carousel .owl-next {
+		right: 0;
+	}
 }
 @media only screen and (max-width: 570px) {
 	.main-slider__wrp {
@@ -371,6 +414,9 @@
 	}
 	.grad-docs-tabs__cnt {
 		min-height: 340px;
+	}
+	.reviews__in .grad-docs__inner-item {
+		min-height: 310px;
 	}
 	.grad-docs__inner-item {
 	    min-height: 200px;
